@@ -17,6 +17,7 @@ protocol CoordinatorFlowDelegate: class {
 class Coordinator {
     //MARK: - Instance part
     var childCoordinators = [Coordinator]()
+    var viewControllers = [UIViewController]()
     
     let window: UIWindow!
     var navigationController: UINavigationController?
@@ -27,6 +28,7 @@ class Coordinator {
     }
     
     func push(_ viewController: UIViewController, animated: Bool = true, completion: (() -> Void)? = nil) {
+        viewControllers.append(viewController)
         if let navigationController = navigationController {
             navigationController.pushViewController(viewController, animated: animated)
             
@@ -45,6 +47,8 @@ class Coordinator {
     
     func pop(animated: Bool = true, completion: (() -> Void)? = nil) {
         let _ = navigationController?.popViewController(animated: animated)
+        let _ = viewControllers.popLast()
+        
         if animated, let transitionCoordinator = navigationController?.transitionCoordinator {
             transitionCoordinator.animate(alongsideTransition: nil, completion: { _ in completion?() })
         } else {
