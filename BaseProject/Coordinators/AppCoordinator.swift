@@ -19,8 +19,11 @@ class AppCoordinator: Coordinator {
     }
     
     func begin() {
-        // Application starting place
+        let vc = MapViewController(coordinator: self)
+        push(vc)
     }
-    
+}
+
+extension AppCoordinator: MapViewControllerCoordinator {
     
 }
