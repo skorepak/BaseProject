@@ -6,6 +6,5 @@ target 'BaseProject' do
   use_frameworks!
 
   # Pods for BaseProject
-  pod 'Baidu-Maps-iOS-SDK'
-  # pod 'BaiduMapKit'
+  pod 'BaiduMapKit'
 end

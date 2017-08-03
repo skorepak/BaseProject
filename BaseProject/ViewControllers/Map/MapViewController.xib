@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,6 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="BaseProject" customModuleProvider="target">
             <connections>
                 <outlet property="mapPlaceholder" destination="F5B-P7-yRM" id="rTk-wf-ne8"/>
+                <outlet property="subtitle" destination="rCl-DF-5V1" id="Ct5-df-DRb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -22,13 +23,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Baidu maps SDK test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rCl-DF-5V1">
-                    <rect key="frame" x="20" y="64" width="335" height="21"/>
+                    <rect key="frame" x="20" y="100" width="335" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F5B-P7-yRM">
-                    <rect key="frame" x="20" y="125" width="335" height="335"/>
+                    <rect key="frame" x="20" y="161" width="335" height="335"/>
                     <color key="backgroundColor" red="0.2901960784" green="0.2901960784" blue="0.2901960784" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="F5B-P7-yRM" secondAttribute="height" multiplier="1:1" id="1Ns-Ga-rYR"/>
@@ -38,7 +39,7 @@
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="rCl-DF-5V1" secondAttribute="trailing" constant="20" id="40C-l9-bzJ"/>
-                <constraint firstItem="rCl-DF-5V1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="4dI-TG-2f1"/>
+                <constraint firstItem="rCl-DF-5V1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="4dI-TG-2f1"/>
                 <constraint firstItem="F5B-P7-yRM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="8nY-Dj-LfC"/>
                 <constraint firstAttribute="trailing" secondItem="F5B-P7-yRM" secondAttribute="trailing" constant="20" id="PFV-la-pgN"/>
                 <constraint firstItem="rCl-DF-5V1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="QV0-6C-uG7"/>
