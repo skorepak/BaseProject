@@ -26,7 +26,7 @@ class BaseViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func backButtonPressed() {
+    @objc private func backButtonPressed() {
         coordinator.backButtonPressed()
     }
 
